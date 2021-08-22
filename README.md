@@ -17,45 +17,48 @@ Topic by Day
 07	0927(m) Docker
 08	0929(w) Docker
 	- chapters 10-12
-09	1004(m)
+09	1004(m) Bring it together
 -= start the second way =-
 10	1006(w) Continuous Development	 
 	- chapters 13-15
-11	1011(m)
-12	1013(w)
+11	1011(m) Automated Testing
+12	1013(w) Automated Testing
 	- chapters 16-18 
-13	1018(m)
-14	1020(w)
+13	1018(m) GitHub Actions
+14	1020(w) GitHub Actions
 	- chapters 19-21
-15	1025(m)
-16	1027(w)
+15	1025(m) Terraform
+16	1027(w) Terraform
 	- chapters 22-24
-17	1101(m)
-18	1103(w)
+17	1101(m) Orchestration
+18	1103(w) Kubernetes
 	- chapters 26-28
 -= start the third way =-
-19	1108(m)
-20	1110(w)
+19	1108(m) Cloud providers
+20	1110(w)	Bring it together
 	- chapters 29-31
-21	1115(m)
-22	1117(w)
+21	1115(m) Tracking work
+22	1117(w) Continuous Improvement
 	- chapters 32-34
-23	1122(m)
-24	1129(m)
-25	1201(w)
+23	1122(m) Logging
+24	1129(m) Security
+25	1201(w) Compliance
 	- chapter 35
-26	1206(m)
-27	1208(w)
+26	1206(m) Site Reliability Engineer 
+27	1208(w) Where do you go from here?
 
+
+	Run the wednesday discussion as lean coffee with miro
+	have them check-in with a response to the chapeters read
 # The Potential	Topic List
 * continuous development
 * linux
 	- bash
 	- tmux
 	- gpg
-	- ssh
+	- ssiihhh
 * logging
-* IaaC
+* IaC
 * CaC
 * "as code"
 * git

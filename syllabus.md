@@ -1,5 +1,5 @@
-**CS-480B INTRODUCTION TO DEVOPS**  
-*Fall 2021, Zoom, M/W 1500-1645*
+**CS-480A INTRODUCTION TO DEVOPS**  
+*Fall 2021, Zoom, M/W 1530-1645*
 
 ## Contact Information
 Mike Kovacina  
@@ -52,6 +52,7 @@ This course meets the following university learning outcomes:
 | 25 | 2021-12-01 | Compliance |
 | 26 | 2021-12-06 | Site Reliability Engineer |
 | 27 | 2021-12-08 | Where do we go from here? |
+| 28 | 2021-12-13 | Final Exam |
 
 # Classroom Activity, Assignments, and Exams
 The class will be conducted primarily through lectures.  Homework will be assigned to provide an opportunity to explore some of the topics covered in class.

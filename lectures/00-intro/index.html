@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<!-- <base href="../../tools/reveal.js"> -->
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../tools/reveal.js/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template data-separator-notes="^Notes:">
+						## Welcome to CS480A
+						## Introduction to DevOps
+						
+						Mike Kovacina
+						
+						michael.kovacina@gmail.com
+
+						Notes:
+						1. The goal of this class is to give you a conversational understanding of the philosophies and technologies that comprise the current state of DevOps
+						2. subgoal of making you more marketable
+						3. instructor background
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template data-separator-notes="^Notes:">
+						# Class Structure
+						
+						- Lectures on philosophical topics
+						- Practical demonstrations of some key tools and technologies
+						- Reading "The Phoenix Project" 
+							- "experience" a DevOps transformation
+						- Hands-on practical assignments
+					
+						Notes:
+						There is a lot (a lot) to DevOps...we can only make a tiny dent, but I hope to impart enough momentum that you can keep going.
+
+						Material from this class comes from research, experience and the "DevOps Handbook" (buy it after december)
+
+						Will require some research and self-learning...welcome to the real world.
+						
+						Google and StackOverflow
+
+						Collaboration is encouraged...just don't copy.  Be adults.  It's okay to ask for help (me or others).
+
+						The goal is understanding
+					</textarea>
+				</section>
+				<section>
+					<section data-markdown data-separator-notes="^Notes:">
+						<textarea data-template>
+							# What is DevOps?
+							
+							> DevOps is the outcome of applying the most trusted principles from the domain of physical manufacturing and IT to the IT value stream 
+							
+							[DevOps Handbook, p.4](https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002/ref=sr_1_1?dchild=1&keywords=devops+handbook&qid=1630131913&sr=8-1)
+							Notes:
+							---
+							# What is DevOps?
+							> DevOps is a software development practice that promotes collaboration between development and operations, resulting in faster and more reliable software delivery. Commonly referred to as a culture, DevOps connects people, process, and technology to deliver continuous value.
+							
+							[Microsoft](https://azure.microsoft.com/en-us/overview/devops-tutorial/)
+							---
+							# "Dev"
+							- Waterfall
+								- upfront planning
+								- deliver when done
+							- Agile
+								- iterative
+								- deliver along the way
+							Notes: 
+							- Rooted in agile
+							- Waterfall was not responsive to changes.
+								- this isn't manufacturing where changes had physical cost (this cuts both ways)
+							- Agile, will touch more on in a later class
+							---
+							# "Ops"
+							![the assembly line](assets/images/assembly-line.jpg)
+
+							> “What gets measured gets managed.” (Peter Drucker)
+							Notes:
+							- Henry Ford effectively operationalized the assembly line
+							- neither development nor operations is a linear assembly
+							- measuring is required for improvement
+							- question: what can you measure?
+								- quality (Defect rate), performance, cost, speed, ROM satisfaction (happy or not)
+						</textarea>
+					</section>	
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+							# Why DevOps?
+							## Value 
+							>  ...the importance, worth, or usefulness of something... (OED)
+
+							Notes:
+							- if your customer never gets their value, you never get paid
+							---
+							# Why DevOps?
+							![over the fence](assets/images/over-the-fence.jpg)
+							Notes:
+							- still following an assembly line mentality 
+							- corporations split into silos with budgets and individual agendas
+							---
+							# The Cast of Characters
+							- developers
+							- testers/quality assurance (QA)
+							- operations (IT)
+							- product owners 
+							- "management"
+							- customers
+							Notes:
+							- question: name some examples of customers 
+							---
+							# Example problems
+							- the developers never installed their software
+							- the developers never tested their software
+								- at all
+								- on production hardware
+								- at scale with load
+							- development delays put a crunch on operations
+							- what the software does isn't what the customer wants
+							---
+							# Feedback Loops
+							
+							![feedback loops](assets/images/feedback-loops.png)
+							 Notes:
+							 - yes, increasing communication means you need to get better at it...continually
+							---
+							# Feedback Loops
+							
+							![forward spiral](assets/images/forward-spiral.png)
+							 Notes:
+							 - feedback is what drives improvement
+							 - the impossible goal of perfection 
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+							# How DevOps?
+							> Form follows function (Louis Sullivan)
+
+							> Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure. (Melvin Conway)
+							
+							Notes:
+							- sullivan was an architect, 19th century
+							---
+							# When to start?
+							- if not at the start, then now
+							- debt is real	
+								- tech, product, security...
+							Notes:
+							- the world is rarely ideal, even at a startup (constraints)
+							- the debts are variations on the same theme of value
+							---
+							# Transformations
+							- it is difficult to turn a big ship
+							- build a coalition up, down, and across your organization
+							- work for an agreed upon understanding of the value delivered
+							- identify a target state
+							- identify transition transition states 
+							- iterate, measure, adapt
+							- avoid the temptation of cynicism :)
+							Notes:
+							- the tem
+						</textarea>
+					</section>
+				</section>
+				<section data-markdown>
+					<textarea data-template data-separator-notes="^Notes:">
+						# Summary
+						- Continuous improvement of the delivery of value
+						- Culture over technology
+						- The sooner the easier
+						Notes:
+						- technology is necessary but not sufficient
+							- it just makes some things easier (avoid reinventing the wheel)
+						- tech debt is subject to compounded interest
+							- tech debt slows you down 
+					</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../tools/reveal.js/dist/reveal.js"></script>
+		<script src="../../tools/reveal.js/plugin/notes/notes.js"></script>
+		<script src="../../tools/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../../tools/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

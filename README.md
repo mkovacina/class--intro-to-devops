@@ -1,4 +1,4 @@
-# jcu-2021-fall-devops-intro
+# Intro to DevOps
 
 ## Resources
 

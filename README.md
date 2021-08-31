@@ -1,6 +1,6 @@
 # jcu-2021-fall-devops-intro
 
-## Syllabus
+## [Syllabus](syllabus.md)
 
 ## Lectures
 

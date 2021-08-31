@@ -101,16 +101,18 @@ An assignment will be considered late if turned in after the end of the class pe
 *Policy on the Documentation and Accommodation of Disabilities*  
 In accordance with federal law, if you have a documented disability you may request accommodations from Student Accessibility Services (SAS). For more information go to the [accessibility page](https://jcu.edu/accessibility) or you may contact the office directly at sas@jcu.edu or 216.397.4967. Please keep in mind that accommodations are not retroactive so it is best to register at the beginning of each semester.  Only accommodations approved by SAS will be recognized in the classroom.  Please contact SAS if you have further questions.
 
-*Academic Honesty*   
-For the full JCU policy on academic honesty, please see the section on Academic Policies and Procedures in the Undergraduate Bulletin.
+*Academic Honesty*
 
-Academic honesty, expected of every student, is essential to the process of education and to upholding high ethical standards. Cheating, including plagiarism, inappropriate use of technology, or any other kind of unethical behavior, may subject the student to severe academic penalties, including dismissal. 
+For the full JCU policy on academic honesty, please see the section on Academic Honesty in the Undergraduate Bulletin (http://jcu.smartcatalogiq.com/2021-2022/Undergraduate-and-Graduate-Bulletin/Academic-Policies-and-Procedures/Academic-Honesty).
+
+Academic honesty, expected of every student, is essential to the process of education and to upholding high ethical standards. Cheating, including plagiarism, inappropriate use of technology, or any other kind of unethical behavior, may subject the student to severe academic penalties ranging from zero on the assignment to failure of the class. 
 
 All work submitted for evaluation in a course, including tests, term papers, and computer programs, must represent only the work of the student unless indicated otherwise. Material taken from the work of others must be acknowledged. Materials submitted to fulfill requirements in one course may not be submitted in another course without prior approval of the instructor(s). 
 
 Concerns about the propriety of obtaining outside assistance and acknowledging sources should be addressed to the instructor of the course before the work commences and as necessary as the work proceeds.
 
 *Policy on Discrimination, Sexual Harassment and Bias*
+
 John Carroll University is committed to fostering an equitable and accessible learning and working environment, based upon open communication, mutual respect, and ethical values consistent with our Jesuit and Catholic tradition. We express this commitment in the following policies and procedures:
 In accordance with federal law, if you have a documented disability you may request accommodations from Student Accessibility Services (SAS). For more information go to the accessibility page or you may contact the office directly at sas@jcu.edu or 216.397.4967. Please keep in mind that accommodations are not retroactive so it is best to register at the beginning of each semester.  Only accommodations approved by SAS will be recognized in the classroom.  Please contact SAS if you have further questions.
 

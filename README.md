@@ -9,6 +9,7 @@
 ## Lectures
 
 [Intro to DevOps](lectures/00-intro/index.html)  
-[Value, Flow, and Systems Thinking](lectures/01-value-flow-systems-thinking/index.html)
+[Value, Flow, and Systems Thinking](lectures/01-value-flow-systems-thinking/index.html)  
+[Agile and "Agile"](lectures/02-agile-and-agile/index.html)
 
 ## References

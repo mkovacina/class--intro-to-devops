@@ -68,26 +68,86 @@
 				<section>
 					<section data-markdown data-separator-notes="^Notes:">
 						<textarea data-template>
+						## In the beginning,  
+						## there was the command line
+
+						Notes:
+						- Book of the same name by NEal Stephenson: https://www.amazon.com/Beginning-Was-Command-Line-ebook/dp/B0011GA08E/ref=sr_1_1?dchild=1&keywords=in+the+beginning+there+was+the+command+line&qid=1631506552&s=books&sr=1-1
+						- examples of command-lines
+							- DOS on Windows
+							- PowerShell on Windows
+							- Terminal on MacOS
+						---
+
+						# Shells
+
+						- a shell is a command interpreter
+						- `sh` is a POSIX standard definition
+						- most (all?) Unix/Linux distributions including an `sh` compatible shell by default
+						- `bash` (Bourne Again Shell) is a popular default 
+						- why called "a terminal"?
+
+						Notes:
+						- POSIX: portable operating system interface (IEEE)
+						- there are many different shells because everyone has an opinion
+						- there are others though 
+							- `dash`, `ash`, `fish`, `zsh`, `ksh`
+						- TTY (teleprinter), line-oriented p2p comm. mechanism (humans to humans, then human to computer)
+							- paper printer replaced with a screen
+
+						---
+
+						## Parts of a shell
+
+						- prompt
+						- command 
+						- arguments
+
+						`#> cat REAMDE`
+
+						Notes:
+						- REAMDE: https://www.amazon.com/Reamde-Novel-Neal-Stephenson/dp/0062191497
+						- `cat` from con'cat'enate
+
+						---
+						# Redirection
+
+						`#> cat REAMDE > data.txt`
+
+						Notes:
+						- redirects the (Standard) output to a file
+						---
+						## Input not from arguments
+
+						`#> cat -`
+
+						Notes:
+						- reads arguments from standard input
+						---
+						# More Redirection
+
+						`#> cat - < REAMDE`
+
+						Notes:
+						- the contents of the file REAMDE are written to standard input for consumption by the command 
+						---
+						## Piping
+
+						`#> cat REAMDE | grep unix`
+
+						Notes:
+						- the output from the first command is "piped" into the standard input of the second command
 						</textarea>
 					</section>	
-				</section>
-				<!-- extreme programming -->
-				<section>
-					<section data-markdown data-separator-notes="^Notes:">
-						<textarea data-template>
-					</section>	
-				</section>
-				<!-- scrum -->
-				<section>
-					<section data-markdown data-separator-notes="^Notes:">
-						<textarea data-template>
-						</textarea>
-					</section>
 				</section>
 				<!-- Summary -->
 				<section data-markdown>
 					<textarea data-template data-separator-notes="^Notes:">
 						# Summary
+						
+						- Linux is the expectation for most new greenfield DevOps
+						- DevOps or not, you need to be comfortable on the command line
+						- the command-line is POWERFUL
 						
 						Notes:
 						- 

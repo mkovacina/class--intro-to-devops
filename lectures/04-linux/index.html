@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Linux (part 2)</title>
+
+		<!-- <base href="../../tools/reveal.js"> -->
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../tools/reveal.js/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template data-separator-notes="^Notes:">
+					## Useful Commands 
+
+					Notes:
+					- basic everyday-style commands
+					- not covering "sys admin" type commands
+					</textarea>
+				</section>
+				<!-- cmd -->
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## list files
+
+						1. `#> ls`  
+						2. `#> ls *.txt`  
+						3. `#> ls a-directory/*.txt`
+						4. `#> ls -R 
+
+						Notes:
+						1. list files and directories in the current a-directory
+						2. list all files in the current directory with an extension of ".txt"
+						3. list all files in the directory `a-directory` with an extension of ".txt"
+						4. recursively list all files and directories starting with the current directory 
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## make a directory
+
+						1. `#> mkdir temp`
+						2. `#> mkdir -p a/b/c` 
+
+						Notes:
+						1. create a directory named temp
+						2. create a directory named `c` and create the parent directories along the way (`a` and `b`)
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## change directory
+
+						1. `#> cd temp`
+						2. `#> cd a/b/c`
+						3. `#> cd ..`
+						4. `#> cd ~`
+
+						Notes:
+						1. change to the directory named `temp`
+						2. change to the directory named `c` along the path `a/b/`
+						3. go up one directory
+						4. goto your home directory
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## pwd
+
+						1. `#> pwd`
+
+						Notes:
+						1. prints the path to the current working directory
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## echoooo echooo echooo
+
+						1. `#> echo hello world!`
+						2. `#> echo pwd`
+						3. `#> echo ` \`pwd\`
+						
+						Notes:
+						1. prints "hello world!" to standard output
+						2. prints "pwd" to standard output
+						3. prints the current directory to standard output	
+							- note the backticks (not single quotes)
+							- that says "substitute the output of the command in this location"
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## remove files and folders
+
+						1. `#> rm a.txt`
+						2. `#> rmdir test`
+						3. `#> rmdir -p a/b/c`
+						4. `#> rm -r a/b/c
+						
+						Notes:
+						1. removes the file named `a.txt`
+						2. removes the directory named `test` if empty
+						3. removes directories `a`, `b`, and `c` if they are empty
+						4. removes directories `a`, `b`, and `c`
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## grep
+
+						1. `#> grep unix REAMDE`
+						2. `#> grep -i unix REAMDE`
+						3. `#> grep -ir unix .`
+						4. `#> grep -irl unix .`
+
+						Notes:
+						1. case-sensitive search for the word "unix" in the file REAMDE
+						2. case-insensitive search for the word "unix" in the file REAMDE
+						3. case-insensitive recursive search for the word "unix" in the file REAMDE
+						4. case-insensitive recursive search for the word "unix" in the file REAMDE and prints only the matching file name
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## find
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## man
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## more/tail
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## ps
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## kill
+						</textarea>
+					</section>
+				</section>
+				<!-- Summary -->
+				<section data-markdown>
+					<textarea data-template data-separator-notes="^Notes:">
+						# Summary
+						
+						- Linux is the expectation for most new greenfield DevOps
+						- DevOps or not, you need to be comfortable on the command line
+						- the command-line is POWERFUL
+						
+						Notes:
+						- 
+					</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../tools/reveal.js/dist/reveal.js"></script>
+		<script src="../../tools/reveal.js/plugin/notes/notes.js"></script>
+		<script src="../../tools/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../../tools/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

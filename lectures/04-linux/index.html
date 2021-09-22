@@ -115,7 +115,7 @@
 						1. `#> rm a.txt`
 						2. `#> rmdir test`
 						3. `#> rmdir -p a/b/c`
-						4. `#> rm -r a/b/c
+						4. `#> rm -r a/b/c`
 						
 						Notes:
 						1. removes the file named `a.txt`
@@ -146,35 +146,85 @@
 				<section>
 					<section data-markdown>
 						<textarea data-template data-separator-notes="^Notes:">
-						## find
+						## find files
+						
+						1. `#> find -iname *.md`
+
+						Notes:
+						1. case-insensitive recursive search for files with a "md" extension
 						</textarea>
 					</section>
 				</section>
 				<section>
 					<section data-markdown>
 						<textarea data-template data-separator-notes="^Notes:">
-						## man
+						## i need help
+
+						1. `#> man ls`
+						2. `#> cat -h`
+						3. `#> cat --help`
+
+						Notes:
+						1. bring up the "man"ual page for the `ls` command 
+						2. short form help for `cat`
+						3. long form help for `cat`
 						</textarea>
 					</section>
 				</section>
 				<section>
 					<section data-markdown>
 						<textarea data-template data-separator-notes="^Notes:">
-						## more/tail
+						## viewing text 
+
+						1. `#> more REAMDE`
+						2. `#> yes | more`
+						3. `#> head REAMDE`
+						4. `#> tail REAMDE`
+						5. `#> tail -f REAMDE`
+						6. `#> ls /etc | tail -n 5`
+
+						Notes:
+						1. paginate the files
+						2. paginate the output of a process
+						3. print the first 10 lines of a file
+						4. print the last 10 lines of a file
+						5. print the last 10 lines of a file and monitor for more data being appended
+						6. print the last 5 entries from the `ls` command 
+
 						</textarea>
 					</section>
 				</section>
 				<section>
 					<section data-markdown>
 						<textarea data-template data-separator-notes="^Notes:">
-						## ps
+						## listing processes
+
+						1. `#> ps`
+						2. `#> ps a`
+						3. `#> ps au`
+						4. `#> ps au | grep bash`
+
+						Notes:
+						1. list your processes
+						2. list processes, including others
+						3. list precesses, including others, with more information
+						4. find a particular process (e.g., `bash`)
+
 						</textarea>
 					</section>
 				</section>
 				<section>
 					<section data-markdown>
 						<textarea data-template data-separator-notes="^Notes:">
-						## kill
+						## terminate a process
+
+						1. `#> kill -9 350`
+						2. `#> pkill -9 cat`
+
+						Notes:
+						1. forcibly kills the process with an ID of 350
+						2. forcibly kills all processes that contains the word 'cat'
+
 						</textarea>
 					</section>
 				</section>
@@ -183,12 +233,9 @@
 					<textarea data-template data-separator-notes="^Notes:">
 						# Summary
 						
-						- Linux is the expectation for most new greenfield DevOps
-						- DevOps or not, you need to be comfortable on the command line
-						- the command-line is POWERFUL
-						
-						Notes:
-						- 
+						- reviewed basic "daily driver" commands
+						- there is a lot more out there, but this is a good start 
+
 					</textarea>
 				</section>
 			</div>

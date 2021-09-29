@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>git</title>
+
+		<!-- <base href="../../tools/reveal.js"> -->
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../tools/reveal.js/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template data-separator-notes="^Notes:">
+					## Git
+					
+					Notes:
+					</textarea>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## What is git?
+
+						- decentralized source control system
+						- Linus Torvalds needed something better and free
+							- ...so he built it
+						- defacto source control system
+						- object-based
+
+						Notes:
+						- centralized means that there is a single server that everyone interacts with  
+						- decentralized here can be seen as point-to-point 
+							- decentralized can be centralized easily
+							- centralized cannot be decentralized (at all)
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## Terminology
+
+						1. repository
+							-  a database containing all the information needed to retain and manage the revisions and history of a project. 
+						2. commit 
+							- (n) A single point in the Git history 
+							- (v) The act of storing the project state to the Git history 
+								- creating a commit
+						---
+						## Terminology
+
+						3. branch 
+							- a line of development
+							- local versus remote
+						4. fetch
+							- determining and getting missing objects from a remote branch
+
+						---
+						## Terminology
+
+						5. merge
+							- bringing changes from one branch into another
+							- results in a new commit 
+						6. pull
+							- fetch and merge
+						Notes:
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## Features
+
+						- every repo has a complete history (grows unbounded)
+						- supports offline (full capability w/o a network)
+						- branching is light/quick
+						- cryptographic authentication of history
+							- commit hashes depends on the previous commits
+							- can't change previous commits without detection
+
+						Notes:
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## Features
+
+						- everything you do is local to your repository
+						- changes are push/pulled through merging
+						- conflict resolution is always the messy part
+
+						Notes:
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## 
+
+						Notes:
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## 
+
+						Notes:
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## 
+
+						Notes:
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## 
+
+						Notes:
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## 
+
+						Notes:
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## 
+
+						Notes:
+						</textarea>
+					</section>
+				</section>
+				<!-- Summary -->
+				<section data-markdown>
+					<textarea data-template data-separator-notes="^Notes:">
+						# Summary
+						
+						- reviewed basic "daily driver" commands
+						- there is a lot more out there, but this is a good start 
+
+					</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../tools/reveal.js/dist/reveal.js"></script>
+		<script src="../../tools/reveal.js/plugin/notes/notes.js"></script>
+		<script src="../../tools/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../../tools/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

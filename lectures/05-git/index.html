@@ -108,10 +108,83 @@
 				<section>
 					<section data-markdown>
 						<textarea data-template data-separator-notes="^Notes:">
-						## 
+						## git commands 
 
 						Notes:
-						</textarea>
+						---
+						## `git init`
+
+						- initializes a new repo
+						- this repo is local to your machine only 
+						---
+						## `git add`
+
+						- adds staged content to be committed  
+						---
+						## `git status`
+
+						- displays the status of the repository
+							* tracked files
+								* files that are new/modified in the *working directory*
+							* untracked files
+								* files that are staged/unstaged in the *staging area*
+						---
+						## `git commit`
+
+						- commits staged files to the branch history
+						
+						Notes:
+						- the commit is still to a local repo
+						---
+						## `git reset`
+
+						- rolls back the history to a specific commit 
+
+						`git reset --soft  HEAD~1`
+						`git reset --mixed HEAD~1`
+						`git reset --hard  HEAD~1`
+
+						Notes:
+						- soft 
+							- file changes remain and in the index
+						- mixed 
+							- file changes remain but removed from the index
+						- hard
+							- you lose all uncommited and untracked files in addition to losing the commits
+						---
+						## `git merge`
+
+						- join two or more histories together
+						- replays the changes from one branch to another 
+						---
+						## `git pull`
+
+						- merge changes from a remote repository into the local repository
+
+						Notes:
+						- this operation creates a merge commit 
+						---
+						## `git push`
+
+						- merge changes from a local repository into a remote repository
+						---
+						## git branch
+
+						`git branch [branch name]`
+						`git branch -a`
+						
+						Notes:
+						- create a branch of the given name from THE CURRENT branch
+						- list all the branches, local and remote
+						---
+						## `git checkout`
+
+						`git checkout [branch name]`
+
+						Notes:
+						- updates files in the working tree to match the version in the index or the specified tree. 
+
+					</textarea>
 					</section>
 				</section>
 				<section>

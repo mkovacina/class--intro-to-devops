@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>docker</title>
+
+		<!-- <base href="../../tools/reveal.js"> -->
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../tools/reveal.js/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template data-separator-notes="^Notes:">
+					## Docker 
+					
+					Notes:
+					- an operating level virtualization mechanism
+					</textarea>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## But first, some history...
+
+						- bare metal
+						- machine images
+						- virtual machines
+						- chroot, ssh jails, cgroups 
+
+						Notes:
+						- bare metal
+							- expensive / no sharing resources
+							- messy
+							- slow to provision 
+						- machine images
+							- expensive / no sharing resources
+							- more reproducible
+							- slow to provision
+						- virtual machines
+							- hardware virtualization	
+							- better hardware utilization
+							- reproducible environment
+
+						---
+
+						## What is Docker
+
+						- OS-level virtualization as opposed to hardware
+							- uses existing system calls instead of virtualizing (Wine) 
+						- software packaged into "containers"
+						- better resource utilization/partitioning
+						- (should be) quicker to start versus a virtual machine 
+						- can only host guest OSs different from the host 
+							- i.e., can't do Windows on Linux
+							- virtual machines + containers
+					</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## Terminology
+
+						- container 
+							- an isolated process running on your machine 
+						- container image 
+							- custom file system that has everything needed to run the app (dependencies, scripts, etc
+							- environment variables, default command to run, etc
+						- docker engine
+						- docker command 
+						- docker desktop
+							- application for building and running containers for developers
+						- docker hub
+							- publish your containers for others to use 
+						- dockerfile 
+							- text file containing all the commands needed to assemble an image
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## Dockerfile
+
+						- dockerfile describes the composition of the container images
+						- [a real example]()
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						</textarea>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../tools/reveal.js/dist/reveal.js"></script>
+		<script src="../../tools/reveal.js/plugin/notes/notes.js"></script>
+		<script src="../../tools/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../../tools/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

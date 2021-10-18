@@ -13,6 +13,6 @@
 [Agile and "Agile"](lectures/02-agile-and-agile/index.html)  
 [Linux, part 1](lectures/03-linux/index.html)  
 [Linux, part 2](lectures/04-linux/index.html)  
-[git](lectures/05-git/index.html)
+[git](lectures/05-git/index.html)  
 [docker](lectures/06-docker/index.html)
 ## References

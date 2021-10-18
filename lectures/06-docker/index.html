@@ -62,6 +62,7 @@
 						- can only host guest OSs different from the host 
 							- i.e., can't do Windows on Linux
 							- virtual machines + containers
+						- written in Go
 					</textarea>
 					</section>
 				</section>
@@ -75,8 +76,14 @@
 						- container image 
 							- custom file system that has everything needed to run the app (dependencies, scripts, etc
 							- environment variables, default command to run, etc
+						---
+						## Terminology
 						- docker engine
-						- docker command 
+							- the container runtime (daemon)
+						- `docker` command 
+							- used to interact with the docker engine 
+						---
+						## Terminology
 						- docker desktop
 							- application for building and running containers for developers
 						- docker hub
@@ -91,8 +98,37 @@
 						<textarea data-template data-separator-notes="^Notes:">
 						## Dockerfile
 
-						- dockerfile describes the composition of the container images
-						- [a real example]()
+						a dockerfile describes the composition of the container images
+						- the set of instructions which acts as a multi-layer filesystem
+						- each command is layer
+						
+						[a real example](https://github.com/mkovacina/sweep)
+
+						[CLI reference](https://docs.docker.com/engine/reference/commandline/cli/)
+						---
+						1. `docker version`
+						---
+						1. `docker image --help`  
+						2. `docker image ls`  
+						3. `docker images`  
+						4. `docker image prune`  
+						---
+						1. `docker ps`
+						2. `docker ps -a`
+
+						Notes:
+						- image versus container instance
+						---
+						1. `docker run hello-world`
+						---
+						1. `docker build --tag sweep/shell .devcontainer`  
+						2. `docker images`  
+						3. `docker build --tag sweep/shell:1.0 .devcontainer`  
+						---
+						1. `docker run -it -v ${pwd}:/sweep sweep/shell`
+						---
+						1. `docker save sweep/shell -o sweep-shell.tgz`
+						2. `docker load sweep/shell -i sweep-shell.tgz`
 						</textarea>
 					</section>
 				</section>

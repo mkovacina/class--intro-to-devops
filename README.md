@@ -15,4 +15,5 @@
 [Linux, part 2](lectures/04-linux/index.html)  
 [git](lectures/05-git/index.html)  
 [docker](lectures/06-docker/index.html)
+[continuous development](lectures/07-continuous-development/index.html)
 ## References

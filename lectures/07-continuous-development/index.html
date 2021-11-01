@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>continuous development</title>
+
+		<!-- <base href="../../tools/reveal.js"> -->
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../tools/reveal.js/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template data-separator-notes="^Notes:">
+					## Continuous Development 
+				
+					> if it hurts,  
+					> do it more often,  
+					> and bring the pain forward.
+					</textarea>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## Development Cycle
+						develop  
+						test  
+						deploy  
+						release
+
+						Notes:
+						Yes, here I am skipping  planning, architecting, security,etc.
+						Those are qualities that can be seen as cross-cutting these 4 stages for the purposes of this disucssion
+						---
+						## Why
+						
+						minimize the time to deliver quality software 
+						---
+						## Benefits
+
+						- better software faster
+							- reduced risk
+							- higher quality
+							- quicker to market
+						- reduced cost through automation	
+						---
+						## Benefits
+
+						- releasable at any time
+						- more product flexibility 
+							- A/B testing, etc
+							- feature flags
+							- dark launches
+						---
+						## Benefits
+
+						- Enables high performance TEAM
+							- reduces burnout
+							- reduces pain
+							- automate the boring stuff
+							- time to talk to customers (Feedback)
+								-ok, maybe not always "talk" but get feedback
+						</textarea>
+						</section>
+					</section>
+					<section>
+						<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## A continuum of continuous... 
+
+						- "continuous development"
+						- continuous integration
+						- continuous delivery
+						- continuous deployment
+						---
+						### Continuous Integration
+
+						- focuses on the running of automated tests
+							- unit test
+							- integration test 
+						- ideally tests are executed for each check-in
+							- what to do with a large codebase
+						---
+						### Continuous Delivery
+						
+						- builds off of Continuous Integration
+						- each check-in results in software that is ready to ship
+							- this can mean "delivered to the shelf"
+							- this can mean "waiting for a manual process" as the next step
+						- the software does not get automatically deployed
+						---
+						### Continuous Deployment
+
+						- builds off of Continuous Delivery
+						- each check-in is automatically deployed to production
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## Continuous Improvement
+						
+						yes, this again...  
+						---
+						## Short Cycles
+
+						- Why short cycles
+							- short cycles means faster feedback
+							- short cycles means more manageable feedback
+							- short cycles mean "smaller bites"
+								- smaller changes are easier to review
+								- smaller changes tend to be safer
+								- smaller changes easier to fix (or revert...)
+						---
+						## Feedback Driven
+
+						- to improve you need to understand where you need to improve
+							- ...insightful 
+						- feedback is used to drive changes
+							- "experiments" are a popular way to view changes
+						- feedback is useful
+							- judgement is not
+						---
+						## Predictable
+
+						- nothing is special anymore
+							- in this case...boring is good
+						- variation is a cost
+							- think about "utilization" from Phoenix
+						- discipline
+						---
+						## Automation
+
+						- testing 
+						- deployment 
+						- monitoring 
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## How it can break down 
+
+						- insufficient automated testing
+							- leads to lack of confidence
+						- environmental differences
+							- issues in production not seen in test
+						- culture change is a long journey
+							- undoing years of conditioning is difficult
+							- legacy technology isn't the only legacy problem
+						---
+						## How it can break down 
+						
+						- organizational misalignment
+							- everyone needs to be rowing in the same direction
+						- delivering "too fast"
+							- customers don't like or want it
+							- regulations prevent it
+							- human intervention required for verification (can't be automated)
+
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						</textarea>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../tools/reveal.js/dist/reveal.js"></script>
+		<script src="../../tools/reveal.js/plugin/notes/notes.js"></script>
+		<script src="../../tools/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../../tools/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

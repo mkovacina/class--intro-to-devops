@@ -32,7 +32,6 @@
 					test  
 					deploy  
 					release
-					---
 					</textarea>
 				</section>
 				<section>
@@ -45,14 +44,7 @@
 						- send notifications
 						- almost anything you can automate
 						---
-						## workflows
-
-						- A <b>Workflow<b/> is a collection of jobs that are executed in parallel
-						- A <b></B>Job</b> is a collection steps executed serially
-						- A <b></b>Step</b> is a task that runs an Action or shell command
-						- An <b>Action</b> are standalone commands
-						---
-						## Event Driven
+						## Event-Driven
 
 						- when an event is detected, a workflow is executed
 						- examples of events
@@ -62,117 +54,47 @@
 						- flexible model
 						- sequencing can be difficult if needed
 						---
+						## Workflows
+
+						- A <b>Workflow<b/> is a collection of jobs that are executed in parallel
+						- A <b>Job</b> is a collection steps executed serially by a Runner
+						- A <b>Runner</b> is a service 
+							- listens for available jobs
+							- runs one Job at a time 
+							- executes one Step at a time
+						- A <b>Step</b> is a task that runs an Action or shell command
+						- An <b>Action</b> are standalone commands
+						---
 						## Overview of Execution
 
 						scenario: checking in code should trigger a build
 
-						step 0: configure your repository to listen for check-in events and build (more later)
-						step 1: check in your code 
-						step 2: GitHub Action engine find all workflows associated
-						- configure your repo 
-						- an event occurs (e.g., code is checked-in)
-						- 
+						- step 0: configure your repository to listen for check-in events and build (more later)  
+						- step 1: check in your code   
+						- step 2: GitHub Action engine find all workflows associated  
+						- step 3: for each Workflow, enqueue each Job  
+						- step 4: a Runner executes a jobs
+						---
+						<code>
+							name: Java CI
+
+							on: [push]
+							
+							jobs:
+							  build:
+								runs-on: ubuntu-latest
+							
+								steps:
+								  - uses: actions/checkout@v2
+								  - name: Set up JDK 11
+									uses: actions/setup-java@v2
+									with:
+									  java-version: '11'
+								  - name: Build with Maven
+									run: mvn --batch-mode --update-snapshots verify
+						</code>
 						</textarea>
 						</section>
-					</section>
-					<section>
-						<section data-markdown>
-						<textarea data-template data-separator-notes="^Notes:">
-						## A continuum of continuous... 
-
-						- "continuous development"
-						- continuous integration
-						- continuous delivery
-						- continuous deployment
-						---
-						### Continuous Integration
-
-						- focuses on the running of automated tests
-							- unit test
-							- integration test 
-						- ideally tests are executed for each check-in
-							- what to do with a large codebase
-						---
-						### Continuous Delivery
-						
-						- builds off of Continuous Integration
-						- each check-in results in software that is ready to ship
-							- this can mean "delivered to the shelf"
-							- this can mean "waiting for a manual process" as the next step
-						- the software does not get automatically deployed
-						---
-						### Continuous Deployment
-
-						- builds off of Continuous Delivery
-						- each check-in is automatically deployed to production
-						</textarea>
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						<textarea data-template data-separator-notes="^Notes:">
-						## Continuous Improvement
-						
-						yes, this again...  
-						---
-						## Short Cycles
-
-						- Why short cycles
-							- short cycles means faster feedback
-							- short cycles means more manageable feedback
-							- short cycles mean "smaller bites"
-								- smaller changes are easier to review
-								- smaller changes tend to be safer
-								- smaller changes easier to fix (or revert...)
-						---
-						## Feedback Driven
-
-						- to improve you need to understand where you need to improve
-							- ...insightful 
-						- feedback is used to drive changes
-							- "experiments" are a popular way to view changes
-						- feedback is useful
-							- judgement is not
-						---
-						## Predictable
-
-						- nothing is special anymore
-							- in this case...boring is good
-						- variation is a cost
-							- think about "utilization" from Phoenix
-						- discipline
-						---
-						## Automation
-
-						- testing 
-						- deployment 
-						- monitoring 
-						</textarea>
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						<textarea data-template data-separator-notes="^Notes:">
-						## How it can break down 
-
-						- insufficient automated testing
-							- leads to lack of confidence
-						- environmental differences
-							- issues in production not seen in test
-						- culture change is a long journey
-							- undoing years of conditioning is difficult
-							- legacy technology isn't the only legacy problem
-						---
-						## How it can break down 
-						
-						- organizational misalignment
-							- everyone needs to be rowing in the same direction
-						- delivering "too fast"
-							- customers don't like or want it
-							- regulations prevent it
-							- human intervention required for verification (can't be automated)
-
-						</textarea>
 					</section>
 				</section>
 				<section>

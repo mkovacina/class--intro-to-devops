@@ -14,6 +14,7 @@
 [Linux, part 1](lectures/03-linux/index.html)  
 [Linux, part 2](lectures/04-linux/index.html)  
 [git](lectures/05-git/index.html)  
-[docker](lectures/06-docker/index.html)
-[continuous development](lectures/07-continuous-development/index.html)
+[docker](lectures/06-docker/index.html)  
+[continuous development](lectures/07-continuous-development/index.html)  
+[github actions](lectures/07-github-actions/index.html)  
 ## References

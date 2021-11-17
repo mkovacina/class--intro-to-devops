@@ -16,5 +16,5 @@
 [git](lectures/05-git/index.html)  
 [docker](lectures/06-docker/index.html)  
 [continuous development](lectures/07-continuous-development/index.html)  
-[github actions](lectures/07-github-actions/index.html)  
+[github actions](lectures/08-github-actions/index.html)  
 ## References

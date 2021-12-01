@@ -31,17 +31,27 @@
 
 					> SRE is what happens when you ask a software engineer to design an operations team
 						(Ben Treynor Sloss, VP of engineering at Google)
+					---
+
+					# What is SRE?
+
+					> responsible for the availability, latency, performance, efficiency, change management, monitoring, emergency response, and capacity planning of their service(s)
+
+					---
+					# What is SRE?
 
 					- use of software engineering principles and automation
 					- using software to solve complex problems
 					- manage production systems
-					- augements a production team
+					- augments a production team
 
-					> responsible for the availability, latency, performance, efficiency, change management, monitoring, emergency response, and capacity planning of their service(s)
 					---
 					# DevOps versus SRE
 
-					- overlap in the use of automation, involvement of IT, and focusing on "good engineering" practices
+					- overlaps
+						- automation
+						- involvement of IT throughout
+						- focusing on "good engineering" practices
 					
 					Notes:
 					devops can be seen as a generalization of SRE with a broader organizational impact
@@ -75,20 +85,42 @@
 						- reframes an outage as part of the innovation process
 						---
 						## Monitoring
-						- Alerts
-						- Tickets
-						- Logging
-						--
+						- tracking system health and availability
+						- don't notify of a problem, notify of an action that should be taken (remove interpretation)
+						- types of monitoring 
+							- Alerts
+								- immediate action
+							- Tickets
+								- action needed soon (days?)
+							- Logging
+								- diagnostic and forensic purposes
+						---
 						## Emergency response
+						- mean time to failure (MTTF)
+						- mean time to repair (MTTR)
+						- playbooks to improve MTTR
+							- prepare instead of react
+						- "wheel of misfortune"/"chaos monkey"
 						-- 
 						## Change management
+						- use automation for the following
+							- progressive rollouts
+							- quickly and accurately detecting problems
+							- rolling back changes safely when problems arise
+						- removing humans from the loop increases velocity
 						--
-						## Forcasting and capacity planning
-						--
+						## Forecasting and capacity planning
+						- organic growth (e.g., product adoption and usage by customers)
+						- inorganic growth (e.g., feature launches, marketing campaigns) 
+						---
 						## Provisioning
-						--
+						- change management and capacity planning
+						- only enough, only when needed
+						---
 						## Efficiency and Performance
-						-- 
+						- resources cost money 
+						- cost -> provisioning -> monitoring -> availability
+						---
 						</section>
 					</section>
 				</section>

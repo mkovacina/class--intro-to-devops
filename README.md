@@ -17,4 +17,6 @@
 [docker](lectures/06-docker/index.html)  
 [continuous development](lectures/07-continuous-development/index.html)  
 [github actions](lectures/08-github-actions/index.html)  
+[terraform](lectures/09-terraform/index.html)  
+
 ## References

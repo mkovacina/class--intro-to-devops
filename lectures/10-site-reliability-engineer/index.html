@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>site reliability engineer</title>
+
+		<!-- <base href="../../tools/reveal.js"> -->
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="../../tools/reveal.js/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../tools/reveal.js/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template data-separator-notes="^Notes:">
+					## Site Reliability Engineering 
+				
+					> hope is not a strategy
+
+					Notes:
+					https://sre.google/sre-book/introduction/remember 
+					quote listed as a "traditional" SRE saying
+					---
+					# What is SRE?
+
+					> SRE is what happens when you ask a software engineer to design an operations team
+						(Ben Treynor Sloss, VP of engineering at Google)
+					---
+
+					# What is SRE?
+
+					> responsible for the availability, latency, performance, efficiency, change management, monitoring, emergency response, and capacity planning of their service(s)
+
+					---
+					# What is SRE?
+
+					- use of software engineering principles and automation
+					- using software to solve complex problems
+					- manage production systems
+					- augments a production team
+
+					---
+					# DevOps versus SRE
+
+					- overlaps
+						- automation
+						- involvement of IT throughout
+						- focusing on "good engineering" practices
+					
+					Notes:
+					devops can be seen as a generalization of SRE with a broader organizational impact
+					SRE can be seen as a specialization of DevOps with a more specific set of ideals
+					</textarea>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						## Tenets
+
+						(from Google SRE, since that's where it started)
+						---
+						## Focus on engineering
+
+						- limit the the amount of operational work
+						- ensure a minimum amount of "coding time" on projects
+							- excess work goes back to the development team 
+
+						Notes:
+						- requires monitoring of the amount and types of work coming in 
+						---
+						## Maximum acceptable (feature) change velocity
+
+						- 100% availability impossible
+							- 99.999%...what is the cost of the 0.001%
+							- does the user notice?
+						- error budget tied to availability
+						- spend the error budget to maximize feature velocity
+							- if software is flaky, no "budget" for new features/innovation
+						- reframes an outage as part of the innovation process
+						---
+						## Monitoring
+						- tracking system health and availability
+						- don't notify of a problem, notify of an action that should be taken (remove interpretation)
+						- types of monitoring 
+							- Alerts
+								- immediate action
+							- Tickets
+								- action needed soon (days?)
+							- Logging
+								- diagnostic and forensic purposes
+						---
+						## Emergency response
+						- mean time to failure (MTTF)
+						- mean time to repair (MTTR)
+						- playbooks to improve MTTR
+							- prepare instead of react
+						- "wheel of misfortune"/"chaos monkey"
+						-- 
+						## Change management
+						- use automation for the following
+							- progressive rollouts
+							- quickly and accurately detecting problems
+							- rolling back changes safely when problems arise
+						- removing humans from the loop increases velocity
+						--
+						## Forecasting and capacity planning
+						- organic growth (e.g., product adoption and usage by customers)
+						- inorganic growth (e.g., feature launches, marketing campaigns) 
+						---
+						## Provisioning
+						- change management and capacity planning
+						- only enough, only when needed
+						---
+						## Efficiency and Performance
+						- resources cost money 
+						- cost -> provisioning -> monitoring -> availability
+						---
+						</section>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template data-separator-notes="^Notes:">
+						</textarea>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../tools/reveal.js/dist/reveal.js"></script>
+		<script src="../../tools/reveal.js/plugin/notes/notes.js"></script>
+		<script src="../../tools/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../../tools/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
